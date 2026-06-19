@@ -10,5 +10,7 @@ I was inspired by the Notion and Google Calendar while making this; I loved the 
 
 <img width="1486" height="738" alt="Screenshot 2026-06-18 at 9 21 30 PM" src="https://github.com/user-attachments/assets/cc38802a-fbb0-450d-bfbe-59b7f1482f78" />
 
-The Process
-[ PICTURES TO BE UPLOADED ]
+<img width="2801" height="4032" alt="IMG_9988" src="https://github.com/user-attachments/assets/6a651b57-a34e-47c3-a64e-feff5b65be93" />
+I don't put much detail to plan out my projects in general in writing; I'm the type of person to simply go right into the project, and make my changes there when I see them live and visually
+
+
