@@ -8,3 +8,7 @@ This project features a blue-themed widget-style dashboard that I designed for p
 
 I was inspired by the Notion and Google Calendar while making this; I loved the fluidity of the UI for both, and how easy it was to utilize both platforms. However, I wanted to make a more condensed verison, mixing both and creating my own, personal dashboard. 
 
+<img width="1486" height="738" alt="Screenshot 2026-06-18 at 9 21 30 PM" src="https://github.com/user-attachments/assets/cc38802a-fbb0-450d-bfbe-59b7f1482f78" />
+
+The Process
+[ PICTURES TO BE UPLOADED ]
