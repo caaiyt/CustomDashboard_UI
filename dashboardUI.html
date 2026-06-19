@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile-space">
+                <h2>Welcome Back!</h2>
+                <p>⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹</p>
+                <br>
+                <h3>Daily Reminders:</h3>
+
+                <br>
+                <p>⟡ Check your Google Calendar </p>
+                <br>
+                <p>⟡ Check both Outlook (school) and Gmail </p>
+
+                <br>
+                <p>⟡ Your Morning Coffee Recipe: </p>
+                    <p>- 1/3 cup of water, boiled </p>
+                    <p>- 1 vietnamese instant coffee packet </p>
+                    <p>- 1 1/2 tablespoon of condensed milk </p>
+                    <p>- 1/2 cup of ice cubes </p>
+                    <p>- half a cup of low-fat milk </p>
+                <br>
+                <p>⟡ Apply to minimum 5 internships daily </p>
+                <br>
+                <p>⟡ Check your work schedule for any changes </p>
+
+
+            </div>
+            <div class="quick-status">
+                <p id="current-date"></p>
+            </div>
+        </aside>
+
+        <main class="dashboard-grid">
+            
+            <section class="widget reminders-widget">
+                <h3>🦈๋࣭⭑ Tasks & Reminders</h3>
+                <ul id="task-list">
+                    <li><input type="checkbox"> Finish portfolio layout</li>
+                    <li><input type="checkbox"> Push code to GitHub</li>
+                    <li><input type="checkbox"> Meokja 1.5 dinner w Della @ 7pm</li>
+                </ul>
+                <div class="widget-input">
+                    <input type="text" id="new-task" placeholder="Add a reminder...">
+                    <button id="add-task-btn">+</button>
+                </div>
+            </section>
+
+            <section class="widget photo-widget">
+                <h3> don't lose sight of who you are .✦ ݁˖</h3>
+                <div class="photo-frame">
+                    <img id="gallery-img" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnVqczB1eW52N2l4ZGlxNHlycjFxdWNkMnRyOXNqYmJwY29zbnpqMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MCLqbKjXuZWyHf0msw/giphy.gif" alt="Anime Movie: Weathering with You">
+                </div>
+                <button id="next-photo-btn"> click for more gifs! </button>
+            </section>
+
+            <section class="widget water-widget">
+                <h3>*ੈ✩‧₊˚🐋 Hydration Tracker</h3>
+                <div class="water-content">
+                    <div class="water-progress">
+                        <span id="water-count">0</span> / 8 Cups
+                    </div>
+                    <div class="water-buttons">
+                        <button id="drink-btn">+ Add Cup</button>
+                        <button id="reset-water-btn" class="secondary-btn">Reset</button>
+                    </div>
+                </div>
+</section>
+            <section class="widget shifts-widget">
+                <h3>°.🐚⋆ Upcoming Work Shifts</h3>
+                <div class="shift-list">
+                    <div class="shift-item">
+                        <span class="shift-day">Friday 6/19</span>
+                        <span class="shift-hours">11:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="shift-item">
+                        <span class="shift-day">Sunday 6/21</span>
+                        <span class="shift-hours">2:00 PM - 7:30 PM</span>
+                    </div>
+                    <div class="shift-item">
+                        <span class="shift-day">Monday 6/22</span>
+                        <span class="shift-hours">1:00 PM - 6:00 PM</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

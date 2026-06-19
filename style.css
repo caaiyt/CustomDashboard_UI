@@ -1,0 +1,232 @@
+/* Blue Color Palette Variables */
+:root {
+    --baltic-blue: #2f6690;
+    --cerulean: #3a7ca5;
+    --alabaster-grey: #d9dcd6;
+    --yale-blue: #16425b;
+    --sky-blue-light: #81c3d7;
+    
+    /* Utility backgrounds */
+    --bg-light: #f4f7f6; 
+    --card-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: var(--bg-light);
+    
+    /* gradient background with moving mouse element, x & y */
+    background-image: radial-gradient(
+        circle at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+        var(--sky-blue-light) 0%, 
+        var(--bg-light) 60%
+    );
+    
+    background-attachment: fixed; 
+    
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: var(--yale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+
+/* dashboard container  */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    height: 85vh;
+}
+
+/* long sidebar customization */
+.sidebar {
+    background: linear-gradient(135deg, var(--yale-blue), var(--baltic-blue));
+    color: var(--alabaster-grey);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 24px rgba(22, 66, 91, 0.15);
+}
+
+.sidebar h2, .widget h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* Main Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.widget {
+    background: var(--card-white);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+    border: 1px solid rgba(129, 195, 215, 0.3); 
+}
+
+.widget:hover {
+    transform: translateY(-2px);
+}
+
+.widget h3 {
+    font-size: 1.1rem;
+    color: var(--baltic-blue);
+    margin-bottom: 12px;
+}
+
+/* individual widget styles  */
+/* 1. Tasks */
+#task-list {
+    list-style: none;
+    overflow-y: auto;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+#task-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#task-list input[type="checkbox"] {
+    accent-color: var(--cerulean);
+    cursor: pointer;
+}
+
+.widget-input {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.widget-input input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--alabaster-grey);
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--bg-light);
+    font-family: inherit;
+}
+
+/* button style */
+button {
+    background-color: var(--baltic-blue);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--yale-blue);
+}
+
+/* 2. Photo Frame */
+.photo-frame {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 2px solid var(--alabaster-grey);
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 3. hydration tracker  */
+.water-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    height: 100%;
+}
+
+.water-progress {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--yale-blue);
+    text-align: center;
+    background-color: var(--sky-blue-light);
+    padding: 12px;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.water-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.secondary-btn {
+    background-color: var(--alabaster-grey);
+    color: var(--yale-blue);
+}
+
+.secondary-btn:hover {
+    background-color: #c2c5be; 
+}
+
+/* 4. upcoming work shifts  */
+.shift-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+}
+
+.shift-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-light);
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 4px solid var(--cerulean);
+}
+
+.shift-day {
+    font-weight: 600;
+}
+
